@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.min.css"
-    >
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
-    >
-    <link rel="stylesheet" href="./css/styles.css" >
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -26,7 +26,7 @@
           >
           <ul class="navigation-list list">
             <li class="navigation-links">
-              <a href="./index.html" class="navigation-link-item link"
+              <a href="./index.html" class="navigation-link-item link current"
                 >Studio</a
               >
             </li>
@@ -67,6 +67,13 @@
         <div class="container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
+          <div class="modal-bg">
+            <div class="modal-frame">
+              <button class="modal-close-btn" width="24" height="24" type="button" ><svg class="modal-close-icon" width="8" height="8">
+                <use href="./images/icon.svg#icon-cross"></use>
+              </svg></button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="skills">
@@ -134,26 +141,26 @@
                 src="./images/gajets/phone_photo.jpg"
                 alt="photo"
                 width="360"
-              >
+              />
             </li>
             <li class="we-doing-list-item">
               <img
                 src="./images/gajets/mac_photo.jpg"
                 alt="photo"
                 width="360"
-              >
+              />
             </li>
             <li class="we-doing-list-item">
               <img
                 src="./images/gajets/mac_phone_photo.jpg"
                 alt="photo"
                 width="360"
-              >
+              />
             </li>
           </ul>
         </div>
       </section>
-      
+
       <section class="our-team">
         <div class="container">
           <h2 class="secondry-title our-team-title">Our Team</h2>
@@ -164,7 +171,7 @@
                 alt="Mark Guerrero"
                 width="264"
                 class="our-team-item-photo"
-              >
+              />
               <div class="team-info">
                 <h3 class="names">Mark Guerrero</h3>
                 <p class="our-team-text">Product Designer</p>
@@ -202,7 +209,7 @@
                 alt="Tom Ford"
                 width="264"
                 class="our-team-item-photo"
-              >
+              />
               <div class="team-info">
                 <h3 class="names">Tom Ford</h3>
                 <p class="our-team-text">Frontend Developer</p>
@@ -240,7 +247,7 @@
                 alt="Camila Garcia"
                 width="264"
                 class="our-team-item-photo"
-              >
+              />
               <div class="team-info">
                 <h3 class="names">Camila Garcia</h3>
                 <p class="our-team-text">Marketing</p>
@@ -278,7 +285,7 @@
                 alt="Daniel Wilson"
                 width="264"
                 class="our-team-item-photo"
-              >
+              />
               <div class="team-info">
                 <h3 class="names">Daniel Wilson</h3>
                 <p class="our-team-text">UI Designer</p>

@@ -111,13 +111,30 @@ h6 {
   gap: 40px;
 }
 .navigation-link-item {
+  position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
-
+  
   color: var(--main-title-color);
+}
+.navigation-link-item.current{
+  color:var(--secondary-accent-color);
+}
+.navigation-link-item::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;  
+  bottom: 0;
+  left: 0;
+}
+.navigation-link-item.current::after{
+  background: var(--secondary-accent-color);
+
 }
 .navigation-links {
 }
@@ -241,7 +258,51 @@ h6 {
   margin-bottom: 72px;
 }
 
-/* skills */
+/**
+ ** |============================
+ ** | Modal
+ ** |============================
+*/
+.modal-bg{
+  display: flex;
+  justify-content: center;
+  position:fixed;
+  padding-top: 88px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+.modal-frame{
+  position:fixed;
+  padding: 24px;
+  width: 408px;
+  min-height: 576px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+}
+.modal-close-btn{
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  border-radius: 12px;
+  background-color: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/**
+ ** |============================
+ ** | Skills
+ ** |============================
+*/
 .skills {
   padding: 120px 0;
   margin: 0 auto;
@@ -451,6 +512,30 @@ h6 {
 .portfolio-item-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.portfolio-item-box{
+  position: relative;
+}
+.portfolio-photo-text{
+  position:absolute;
+  padding: 40px 32px 0 32px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  color: var(--secondary-bg-color);
+  background-color: var(--primaty-accent-color);
+}
+.portfolio-items:hover .portfolio-photo-text,
+.portfolio-items:hover .portfolio-photo-text{
+
+  opacity: 1;
+}
+.portfolio-items-photo {
+
+}
 
 .portfolio-items-header {
   font-weight: 500;
@@ -466,8 +551,6 @@ h6 {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-}
-.portfolio-items-photo {
 }
 .portfolio-items-text {
   margin-left: 16px;
