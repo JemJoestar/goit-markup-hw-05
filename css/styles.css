@@ -87,7 +87,11 @@ h6 {
   display: flex;
   align-items: center;
 }
-/* Logo stiles */
+/**
+ ** |============================
+ ** | Logo
+ ** |============================
+*/
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -105,7 +109,11 @@ h6 {
 .logo-second-color {
   color: #f4f4fd;
 }
-/* Navigation */
+/**
+ ** |============================
+ ** | Navigation
+ ** |============================
+*/
 .navigation-list {
   display: flex;
   gap: 40px;
@@ -148,7 +156,11 @@ h6 {
   text-decoration: none;
 }
 
-/* contacts */
+/**
+ ** |============================
+ ** | Contacts
+ ** |============================
+*/
 .contacts {
   font-style: inherit;
   margin-left: auto;
@@ -173,7 +185,11 @@ h6 {
   color: var(--secondary-accent-color);
 }
 
-/* Social media */
+/**
+ ** |============================
+ ** | Social media
+ ** |============================
+*/
 .social-media-list {
   display: flex;
   gap: 24px;
@@ -197,7 +213,11 @@ h6 {
   fill: var(--secondary-bg-color);
 }
 
-/* Hero */
+/**
+ ** |============================
+ ** | Hero
+ ** |============================
+*/
 .hero {
   max-width: 1440px;
   margin: 0 auto;
@@ -247,7 +267,11 @@ h6 {
   background-color: #404bbf;
 }
 
-/* secondry title */
+/**
+ **|============================
+ **| Secondry title
+ **|============================
+*/
 .secondry-title {
   font-weight: 700;
   font-size: 36px;
@@ -354,7 +378,11 @@ h6 {
 .skills-text{
   margin: 0;
 }
-/* what are we doing */
+/**
+ ** |============================
+ ** | What are we doing
+ ** |============================
+*/
 .we-doing {
   padding-bottom: 120px;
 }
@@ -367,7 +395,11 @@ h6 {
   margin-right: 24px;
 }
 
-/* Our team */
+/**
+ ** |============================
+ ** | Our team
+ ** |============================
+*/
 .our-team {
   padding: 120px 0;
   background-color: #f4f4fd;
@@ -417,7 +449,11 @@ h6 {
 .our-team-social-media:focus{
   background-color: #404bbf;
 }
-/* Customers */
+/**
+ ** |============================
+ ** | Customers
+ ** |============================
+*/
 .customers {
   padding: 120px 0;
   text-align: center;
@@ -455,11 +491,15 @@ h6 {
 .customers-links:focus .customers-icons{
   fill: currentColor;
 }
-/* Portfolio */
+/**
+ **|============================
+ **| Portfolio
+ **|============================
+*/
 .portfolio {
   padding: 96px 120px;
 }
-/* portfolio buttons */
+/* *portfolio buttons */
 .portfolio-filters {
   display: flex;
   margin: 0 auto;
@@ -491,7 +531,7 @@ h6 {
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
-/*  portfolio photos */
+/* * portfolio photos */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -556,7 +596,11 @@ h6 {
   margin-left: 16px;
   color: var(--main-text-color);
 }
-/* Footer */
+/**
+ ** |============================
+ ** | Footer
+ ** |============================
+*/
 .footer {
   background-color: var(--main-title-color);
   color: var(--secondary-bg-color);
