@@ -303,9 +303,9 @@ h6 {
  ** |============================
 */
 .modal-bg.is-hidden {
-  transform: scale(0);
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 250ms var(--primary-cubic-bezier), transform 0ms var(--primary-cubic-bezier) 250ms;
+  transition: opacity 250ms var(--primary-cubic-bezier), visibility 250ms var(--primary-cubic-bezier) 250ms;
 }
 .modal-bg {
   display: flex;
@@ -317,10 +317,11 @@ h6 {
   bottom: 0;
   right: 0;
   background-color: rgba(46, 47, 66, 0.4);
-  transform: scale(100%);
+  visibility: visible;
   opacity: 1;
-  transition: opacity 250ms var(--primary-cubic-bezier) 100ms, transform 0ms var(--primary-cubic-bezier);
+  transition: opacity 250ms var(--primary-cubic-bezier), visibility 250ms var(--primary-cubic-bezier)  ;
   perspective: 600px;
+  
 }
 .modal-bg.is-hidden .modal-frame {
   transform: rotateY(90deg);
